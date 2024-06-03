@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom,rgba(233, 121, 93, 0.934) , rgba(127, 47, 224, 0.874));
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* text-align: center; */
+    /* padding-top: 2rem; */  
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: rgba(63, 63, 185, 0.865);
+    height: 10rem;
+    width: 30rem;
+    border: 5px solid rgba(63, 63, 185, 0.865);
+    
+}
+    .btn:hover{
+        border: 5px solid red;
+        color: #d80032;
+        animation: shaking .2s linear infinite;
+    }
+
+@keyframes shaking {
+    0%{
+        rotate: 20deg;
+    
+    }
+    50%{
+        rotate: -20deg;
+    }
+    100%{
+        rotate: 20deg;
+    }
+    
+    
+}
